@@ -4,14 +4,11 @@
     "version": "1.0",
     "description": "Play Sudoku directly in your browser.",
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": "/icon.png"
+      "default_icon": "./icon.png"
     },
-    "permissions": [],
-    "icons": {
-      "16": "/colorIcon.png",
-      "48": "/colorIcon.png",
-      "128": "/colorIcon.png"
-    }
+    "background": {
+      "service_worker": "./background.js"
+    },
+    "permissions": ["tabs"]
   }
   
